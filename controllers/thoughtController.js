@@ -89,3 +89,23 @@ module.exports = {
             res.status(400).json(err);
         }
     },
+    // delete reaction
+    async deleteReaction(req, res) {
+        try {
+            const thought = await Thought.findOneAndUpdate(
+                { _id: req.params.id },
+                { $pull: { reactions: { reactionId: req.params.reactionId } } },
+                { new: true }
+            );
+            if (!thought) {
+                res.status(404).json({ message: 'No thought found with this id!' });
+                return;
+            }
+            res.json(thought);
+        }
+        catch (err) {
+            res.status(400).json(err);
+        }
+    }
+};
+
