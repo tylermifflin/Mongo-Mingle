@@ -23,3 +23,11 @@ const reactionSchema = new Schema(
     get: createdAtVal => dateFormat(createdAtVal)
     }
     },
+    {
+    toJSON: {
+    getters: true
+    }
+    }
+);
+
+module.exports = reactionSchema;
