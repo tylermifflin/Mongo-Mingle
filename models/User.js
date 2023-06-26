@@ -28,4 +28,17 @@ const userSchema = new Schema(
     }
     ]
     },
-    
+    { 
+    toJSON: {
+    virtuals: true,
+    getters: true
+    },
+    id: false
+    }
+    );
+
+    // get total count of friends on retrieval
+    userSchema.virtual('friendCount').get(function() {
+    return this.friends.length;
+    }
+    );
