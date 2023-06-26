@@ -18,6 +18,10 @@ module.exports = {
                 path: 'thoughts',
                 select: '-__v'
             })
+            .populate({
+                path: 'friends',
+                select: '-__v'
+            })
             .select('-__v');
             if (!user) {
                 res.status(404).json({ message: 'No user found with this id!' });
