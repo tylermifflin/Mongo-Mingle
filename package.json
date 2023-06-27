@@ -1,0 +1,24 @@
+{
+  "name": "mongo-mingle",
+  "version": "1.0.0",
+  "description": "## Table of Contents * [Description](#description) * [Installation](#installation) * [Usage](#usage) * [License](#license) * [Contributing](#contributing) * [Tests](#tests) * [Questions](#questions) ## Description tbt ## Installation tbt ## Usage tbd ## License",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylermifflin/Mongo-Mingle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tylermifflin/Mongo-Mingle/issues"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^7.0.2"
+  },
+  "homepage": "https://github.com/tylermifflin/Mongo-Mingle#readme"
+}
