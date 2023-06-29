@@ -1,4 +1,5 @@
 const { User, Thought } = require('../models');
+const reactionSchema = require('../models/Reaction.js');
 
 module.exports = {
     // get all thoughts
@@ -77,13 +78,14 @@ module.exports = {
         try {
             const thought = await Thought.findOneAndUpdate(
                 { _id: req.params.id },
-                { $push: { reactions: req.body } },
-                { new: true, runValidators: true }
+                { $addToSet: { reactions: req.body } },
+                { new: true }
             );
             if (!thought) {
                 res.status(404).json({ message: 'No thought found with this id!' });
                 return;
             }
+            console.log(thought);
             res.json(thought);
         }
         catch (err) {
