@@ -9,8 +9,9 @@
 * [Tests](#tests)
 * [Questions](#questions)
 ## Description
-This app uses MongoDB and Mongoose to create a social network database where you can create users, users can create thoughts, any user can add a reaction to a thought, and you can even add friends. The database also uses virtuals to keep track of reaction count and friend count for each user. This was a fun way to learn how to use MongoDd with express. Here is a video showing the functionality of each route tested in Insomnia : https://drive.google.com/file/d/1XK0HIb-uZUAF2Drqy3j0Hfs7maXQ8hrp/view?usp=sharing 
+This app uses MongoDB and Mongoose to create a social network database where you can create users, users can create thoughts, any user can add a reaction to a thought, and you can even add friends. The database also uses virtuals to keep track of reaction count and friend count for each user. This was a fun way to learn how to use MongoDd with express. 
 Here is a screenshot of route testing in Insomnia : ![Screenshot 2023-06-29 at 10 41 03 PM](https://github.com/tylermifflin/Mongo-Mingle/assets/123903709/8379df97-81fa-45f9-85e4-10ba95bc4221)
+Here is a video showing the functionality of each route tested in Insomnia : https://drive.google.com/file/d/1XK0HIb-uZUAF2Drqy3j0Hfs7maXQ8hrp/view?usp=sharing 
 
 ## Installation
 The user will need to have Node and MongoDb installed on their local computer. The user will then run npm i to download express and mongoose.
